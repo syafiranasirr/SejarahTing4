@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".login_teacher"
+android:background="@drawable/bg1">
+
+<ImageView
+    android:id="@+id/login_applogo"
+    android:layout_width="wrap_content"
+    android:layout_height="118dp"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentEnd="true"
+    android:layout_alignParentRight="true"
+    android:layout_marginStart="118dp"
+    android:layout_marginLeft="118dp"
+    android:layout_marginTop="40dp"
+    android:layout_marginEnd="112dp"
+    android:layout_marginRight="112dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.066"
+    app:srcCompat="@drawable/logo"
+    android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/tittle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_applogo"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="GURU"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textSize="19sp"
+        android:layout_marginTop="15dp" />
+
+
+    <EditText
+    android:id="@+id/teachEmail"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/tittle"
+    android:background="#fff"
+    android:padding="20dp"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:hint="Email Address"
+    android:inputType="textEmailAddress"
+    android:textColor="@color/colorPrimaryDark"
+    android:textColorHint="@color/colorPrimaryDark"
+    android:textSize="19sp"
+    android:layout_marginTop="50dp" />
+
+
+<EditText
+    android:id="@+id/login_password_input"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/teachEmail"
+    android:background="#fff"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:layout_marginTop="10dp"
+    android:hint="Password"
+    android:inputType="textPassword"
+    android:textColor="@color/colorPrimaryDark"
+    android:textColorHint="@color/colorPrimaryDark"
+    android:textSize="19sp"
+    android:padding="20dp"
+    />
+
+
+
+<Button
+    android:id="@+id/login_btn"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/login_password_input"
+    android:layout_marginTop="20dp"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:background="@drawable/button_rectangle"
+    android:padding="17dp"
+    android:textAllCaps="false"
+    android:textSize="18sp"
+    android:text="Login"
+    android:textColor="@android:color/black"
+    />
+
+</RelativeLayout>
